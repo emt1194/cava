@@ -13,23 +13,28 @@
             background: url('bone.png') repeat, radial-gradient(circle, rgba(255,240,0,1) 0%, rgba(255,156,44,1) 100%);
             background-blend-mode: overlay;
             font-family: 'Inter', sans-serif;
+            padding: 20px;
         }
 
         .container {
             position: relative;
-            max-width:500px;
+            max-width: 500px;
             padding: 20px;
             text-align: center;
         }
 
         .image {
-            width: 500px;
+            width: 450px;
             height: auto;
+			padding-top:100px;
+			-webkit-filter: drop-shadow(5px 5px 5px #222);
+			filter: drop-shadow(5px 5px 5px #222);
+			}
         }
-		
-		h2, p {
-		color: #444;
-		}
+        
+        h2, p {
+            color: #444;
+        }
         
         .button {
             display: inline-block;
@@ -38,20 +43,34 @@
             background: orange;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 15px;
             cursor: pointer;
             font-size: 16px;
-			border: 2px solid transparent;
+            border: 2px solid white;
         }
-		
-		.button:hover {
-		border: 2px solid white;
-		}
+        
+        .button:hover {
+            border: 2px solid yellow;
+			background: #ffbb33;
+
+        }
         
         .small-text {
             margin-top: 5px;
             font-size: 12px;
             color: gray;
+        }
+
+        @media (max-width: 568px) {
+            .container {
+                padding: 10px;
+            }
+            .image {
+                width: calc(100% - 100px);
+                padding: 30px;
+				padding-top:0px;
+            }
+
         }
     </style>
 </head>
@@ -59,8 +78,8 @@
     <div class="container">
         <img class="image" src="cavachon.png" alt="cavachon">
         <h2>Welcome to the FUN Zone!</h2>
-		<p><strong>Cavachons:</strong> The Cavachon is a pint-sized bundle of joy, combining the best of the Cavalier King Charles Spaniel and the Bichon Frise! These fluffy little charmers are known for their affectionate nature, playful energy, and irresistibly soft coats. With their soulful eyes and perpetual puppy-like enthusiasm, Cavachons make excellent companions for families, singles, and just about anyone who loves a cuddle. They thrive on attention, love a good game of fetch, and are just as happy curling up in your lap for a nap. Hypoallergenic, friendly, and utterly adorable—what’s not to love?</p>
-		<p><strong>$CAVACHON:</strong> No taxes, no presale, no rug, and the only bundles here are BUNDLES OF FUN. LP burnt and contract renounced, $CAVACHON is the first, and only, Cavachon themed memecoin. Have fun!</p>
+        <p><strong>Cavachons:</strong> The Cavachon is a pint-sized hypoallergenic bundle of joy, combining the best of the Cavalier King Charles Spaniel and the Bichon Frise, famous for their love of memes.</p>
+        <p><strong>$CAVACHON:</strong> No taxes, no presale, no rug, and the only bundles here are BUNDLES OF FUN. LP burnt and contract renounced, $CAVACHON is the first, and only, Cavachon themed memecoin. Have fun!</p>
         <button class="button">DEXSCREENER</button>
         <button class="button">PUMP.FUN</button>
         <p class="small-text">CA: XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
